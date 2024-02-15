@@ -1,0 +1,10 @@
+{
+  "delay": 80,
+  "ext": "js,json,yaml,yml",
+  "ignore": [
+    "client/",
+    "docker-compose.yml"
+  ],
+  "signal": "SIGTERM",
+  "exec": "npm run inspect"
+}  

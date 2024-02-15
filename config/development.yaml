@@ -1,0 +1,57 @@
+version: !package version
+nodeEnv: development
+databases:
+  ec: !database
+    type: sequelize:mysql
+    host: 115.186.167.218
+    name: exactcareers_dev
+    username: devnativesadmin
+    password: Dev@admin$mysql
+    requestTimeout: 30000
+    pool:
+      max: 10
+      min: 0
+      idle: 10000
+http:
+  port: 3000
+  sessionSecret: super-secret-key
+  sessionTimeout: 900000
+  sessionDomain: localhost
+slack:
+  OAUTH_ENDPOINT: https://slack.com/oauth/v2/authorize
+  OAUTH_TOKEN: https://slack.com/api/oauth.v2.access
+  CLIENT_ID: '6486214291906.6490653891858'
+  CLIENT_SECRET: a8438daf8c5596e73e1ccfbfbc05d9fb
+  BOT_SCOPE: chat:write,chat:write.public,incoming-webhook
+  USER_SCOPE: channels:read,identify,chat:write
+  REDIRECT_URL: https://www.exactcareers.com
+googleOAuth:
+  CREDENTIALS_PATH: ./config/credentials.json
+  clientID: 660358880024-96afobvja4ac4t8l4ftsq3m46fj0123k.apps.googleusercontent.com
+  clientSecret: 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
+  callbackUrl: /api/login/return
+zoom:
+  OAUTH_ENDPOINT: https://zoom.us/oauth/token
+  API_BASE_URL: https://api.zoom.us/v2
+  Account_ID: 4rDBNqY5SYO0JoOFn_c70g
+  ZOOM_OAUTH_TOKEN_URL: https://zoom.us/oauth/token
+  ZOOM_REDIRECT_URL: http://192.168.2.175:3001/settings/company-settings/permissions
+  ZOOM_OAUTH_AUTHORIZATION_URL: https://zoom.us/oauth/authorize
+  ZOOM_OAUTH_REVOKE_TOKEN_URL: https://zoom.us/oauth/revoke
+  Client_ID: sLoZfmHcTlOu6JPCRX5Ckw
+  Client_Secret: rW9t2hlidNmTezYeCdHIz8WaAQ8ErQ3m
+api:
+  API_TOKEN_ENCRYPTION_KEY: 9a184d0f7395512642fedad0d7319ad647d5037abecf7407c3623db0a65ffe21
+  ENCRYPTION_IV: 3ae87f2ad408917d79406ae012728c4e
+  SENDGRID_API_KEY: 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
+  url: http://192.168.2.175:3001/login
+  senderEmail: abdulhannan@devnatives.com
+  passwordExpirationTimeMS: 600000
+  apiBaseUrl: http://192.168.2.175:3000
+  clientBaseUrl: http://192.168.2.175:3001
+socket:
+  ioPort: 3002
+  clientUrl: http://192.168.2.175:3001
+secret: b9698b8546220246fe600a949db326bf
+resetUrl: http://192.168.2.175:3001/reset-password
+offerUrl: http://192.168.2.175:3001/offer-letter

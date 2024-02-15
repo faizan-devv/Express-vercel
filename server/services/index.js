@@ -1,0 +1,15 @@
+module.exports = {
+  UsersService: require('./usersService'),
+  CommonService: require('./commonService'),
+  Entities: require('./entitiesServices'),
+  CountriesService: require('./countriesService'),
+  CompaniesService: require('./companiesService'),
+  JobsService: require('./jobsService'),
+  ApplicantsService: require('./applicantsService'),
+  PipelineService: require('./jobsService'),
+  PoolService: require('./poolService'),
+  TeamsService: require('./teamsService'),
+  ScoreCardService: require('./scorecardService'),
+  RolesService: require('./rolesService'),
+  BaseService: require('./baseService'),
+};

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="background: #f5f5f5; font-family: Poppins; margin: 0;">
+    <table style="
+        width: 600px; 
+        margin: 0 auto; 
+        text-align: center; 
+        padding: 48px 32px;
+        ">
+        <tr>
+            <td>
+                <img src="{apiBaseUrl}/api/common/ExactCareers-Logo-Vertical.png" style="margin-bottom:24px;" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="
+                    box-shadow: 0px 2px 2px 0px #00000024; 
+                    background-color: #ffffff;
+                    border-radius: 4px 4px 4px 4px; 
+                    margin-bottom: 24px;
+                ">
+                    <div style="padding: 24px 32px;">
+                        <div style="display: flex; justify-content: center;">
+                            <div style="
+                                display: flex;
+                                justify-content: center; 
+                                padding: 8px; 
+                                border-radius: 50%; 
+                                background-color:#E3F2FD;
+                            ">
+                                <img src="{apiBaseUrl}/api/common/email.png" style="width: 40px;" />
+                            </div>
+                        </div>
+                        <p style="font-size: 16px; font-weight: bold; color: #212121;">
+                            Verify your email address
+                        </p>
+                        <hr style="
+                            height: 1px; 
+                            background-color: #D9D9D9; 
+                            border: 0; 
+                            margin: 16px 0;
+                        " />
+                        <p style="font-size: 14px; color: #212121;">
+                            We are glad to have you here. Your ExactCareers account is almost ready, we just need to
+                            verify
+                            your
+                            email address. Please enter following verification code in order to complete your
+                            registration.
+                        </p>
+                        <p style="font-size: 12px; color: #616161; margin: 16px 0;">This code will expire after 24 hours
+                            and you have to
+                            generate it
+                            again.
+                        </p>
+                        <div style="display: flex; justify-content: center;">
+                            <p style="
+                                    border: 1px solid #2196F3;
+                                    padding: 8px 16px 8px 16px; 
+                                    border-radius: 2px; 
+                                    margin: 0;
+                            ">
+                                {verificationCode}
+                            </p>
+                        </div>
+                        <div style="display: flex; justify-content: center;">
+                            <hr style="
+                                height: 1px; 
+                                background-color: #D9D9D9; 
+                                border: 0; margin: 24px 0; 
+                                width: 100px;
+                            " />
+                        </div>
+                        <p style="font-size: 12px; font-style: italic; color:#616161; margin:0">
+                            If you have not registered for this account, you can simply ignore this email.
+                        </p>
+                    </div>
+                    <hr style="
+                        border-radius:0 0 4px 4px;
+                        height:4px; 
+                        background: linear-gradient(90deg, rgba(236,144,18,1) 0%,
+                        rgba(236,144,18,1) 20%, 
+                        rgba(242,171,43,1) 20%, 
+                        rgba(242,171,43,1) 40%,
+                        rgba(254,206,50,1) 40%, 
+                        rgba(254,206,50,1) 100%); 
+                        border: 0; margin: 0;
+                    "/>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p style="color: #616161; margin-top: 0; font-size: 12px;">
+                    Sent from ExactCareers team
+                </p>
+                <ul style="
+                    display: table;
+                    align-items: center;
+                    padding: 0;
+                    margin: auto;
+                ">
+                    <li style="display: table-cell">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="{apiBaseUrl}/api/common/facebook.png" alt="Facebook" />
+                        </a>
+                    </li>
+                    <li style="display: table-cell">
+                        <a href="https://www.linkedin.com/" target="_blank">
+                            <img src="{apiBaseUrl}/api/common/linkedin-circled.png" alt="LinkedIn" />
+                        </a>
+                    </li>
+                    <li style="display: table-cell">
+                        <a href="https://twitter.com/" target="_blank">
+                            <img src="{apiBaseUrl}/api/common/twitter-circled.png" alt="Twitter" />
+                        </a>
+                    </li>
+                    <li style="display: table-cell">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="{apiBaseUrl}/api/common/youtube.png" alt="YouTube" />
+                        </a>
+                    </li>
+                    <li style="display: table-cell">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="{apiBaseUrl}/api/common/instagram.png" alt="Instagram" />
+                        </a>
+                    </li>
+                </ul>
+                <ul style="display: table; margin: auto; padding: 0; color:#616161; font-size: 12px;">
+                    <li style="display: table-cell">
+                        <p>
+                            ExactCareers
+                        </p>
+                    </li>
+                    <li style="display: table-cell">
+                        <p style="margin: 0 4px;">
+                            |
+                        </p>
+                    </li>
+                    <li style="display: table-cell">
+                        <p>
+                            ©2024, All Rights Reserved
+                        </p>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

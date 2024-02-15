@@ -32,19 +32,19 @@ class BaseService {
         NotificationCategoryID: 1,
       },
     });
-    if (fetchGoogleOauthClient) {
-      const content = await fsPromise.readFile(
-        path.join(process.cwd(), this.CREDENTIALS_PATH)
-      );
-      const keys = JSON.parse(content);
-      const key = keys.installed || keys.web;
-      const oauth2Client = new google.auth.OAuth2(
-        key.client_id,
-        key.client_secret,
-        key.redirect_uris[0]
-      );
-      this.googleOauthClient = oauth2Client;
-    }
+    // if (fetchGoogleOauthClient) {
+    //   const content = await fsPromise.readFile(
+    //     path.join(process.cwd(), this.CREDENTIALS_PATH)
+    //   );
+    //   const keys = JSON.parse(content);
+    //   const key = keys.installed || keys.web;
+    //   const oauth2Client = new google.auth.OAuth2(
+    //     key.client_id,
+    //     key.client_secret,
+    //     key.redirect_uris[0]
+    //   );
+    //   this.googleOauthClient = oauth2Client;
+    // }
     this.tokens = await this.models.thirdPartyAPITokens.findAll();
   };
   getTokensFromLocalCache = async (thirdPartyApiID, userId) => {
